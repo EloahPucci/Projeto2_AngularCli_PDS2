@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../cliente';
 import { collectAndResolveStyles } from '@angular/core/src/animation/animation_style_util';
+import { ClientesService } from '../clientes.service';
 
 @Component({
   selector: 'app-cliente-list',
@@ -9,7 +10,7 @@ import { collectAndResolveStyles } from '@angular/core/src/animation/animation_s
 })
 export class ClienteListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private clienteService: ClientesService) { }
 
   clientes: Cliente[] = [];
 
