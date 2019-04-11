@@ -25,5 +25,4 @@ export class ClientesService {
     console.error('Ocorreu um erro', error);
     return Observable.throw(erro);
   }
-
 }
